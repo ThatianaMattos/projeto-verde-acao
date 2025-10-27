@@ -1,0 +1,332 @@
+/* ============ TOKENS (design system) ============ */
+$primary: #66bb6a;
+$text: #111827;
+$text-muted: #374151;
+$page: #effae3;
+$form: #e8f5e9;
+
+$radius: 16px;
+$shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+$shadow-hover: 0 8px 18px rgba(0, 0, 0, 0.2);
+
+/* Tipografia fluida */
+$fs-body: clamp(16px, 1.2vw, 20px);
+$fs-h1: clamp(2rem, 4vw, 4.5rem);
+$fs-h2: clamp(1.5rem, 2.5vw, 2.5rem);
+$fs-h3: clamp(1.125rem, 1.6vw, 1.5rem);
+
+/* Gutter/respiro lateral e container */
+:root {
+  --page-gutter: clamp(16px, 2vw, 48px);
+}
+
+/* ============ RESET / BASE ============ */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font: 400 $fs-body "Roboto", system-ui, -apple-system, Segoe UI, Roboto,
+    Ubuntu, sans-serif;
+  line-height: 1.6;
+  color: $text;
+  background: #fff;
+
+  /* (opcional) esconder barra; atenção à acessibilidade */
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  scrollbar-width: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* ============ HELPERS / LAYOUT ============ */
+.container {
+  width: min(1200px, 100% - (2 * var(--page-gutter)));
+  margin-inline: auto;
+}
+
+.safe-edges {
+  padding: 2.5vw;
+}
+
+/* proteção contra overscan em TV/projetor */
+
+/* ============ HERO (banner + overlay) ============ */
+.hero {
+  position: relative;
+  min-height: 360px;
+  height: clamp(360px, 60vh, 520px);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  background: url("./img/banner-hero.png") center/cover no-repeat;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  padding: 1rem;
+
+  h1 {
+    margin: 0 0 0.75rem;
+    font-weight: 700;
+    font-size: $fs-h1;
+  }
+
+  p {
+    margin: 0 auto 1.25rem;
+    max-width: 70ch;
+    font-weight: 500;
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+  }
+}
+
+/* ============ BOTÕES ============ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.25rem;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: $shadow-hover;
+}
+
+.btn--primary {
+  background: $primary;
+  color: #fff;
+}
+
+.btn--outline {
+  background: transparent;
+  color: $primary;
+  border-color: $primary;
+}
+
+/* ============ MAIN / CARDS ============ */
+main {
+  background: $page;
+}
+
+.cards {
+  padding: 64px 0;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1920px) {
+  .cards {
+    gap: 32px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .container {
+    width: min(1400px, 100% - (2 * var(--page-gutter)));
+  }
+
+  .cards {
+    gap: 40px;
+  }
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: $shadow;
+  transition: transform 0.25s, box-shadow 0.25s;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $shadow-hover;
+  }
+
+  img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .card__body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+
+    h3 {
+      margin: 0;
+      font-weight: 700;
+      font-size: $fs-h3;
+      color: rgba(0, 0, 0, 0.85);
+    }
+
+    p {
+      margin: 0 0 0.5rem;
+      color: $text-muted;
+      font-size: 1rem;
+    }
+
+    .btn {
+      align-self: flex-start;
+    }
+  }
+}
+
+/* ============ FORMULÁRIO ============ */
+.signup {
+  background: $form;
+  padding: 48px 0;
+}
+
+.signup__panel {
+  text-align: center;
+
+  h2 {
+    margin: 0 0 0.5rem;
+    font-size: $fs-h2;
+  }
+
+  p {
+    margin: 0 auto 1.5rem;
+    color: $text-muted;
+    max-width: 60ch;
+  }
+}
+
+.form {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 520px;
+  display: grid;
+  gap: 14px;
+}
+
+.form input {
+  height: 48px;
+  width: 100%;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  padding: 0 16px;
+  font-size: 1rem;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: $primary;
+  box-shadow: 0 0 0 4px rgba(102, 187, 106, 0.18);
+}
+
+.form .btn {
+  width: 100%;
+}
+
+/* ============ RODAPÉ ============ */
+.site-footer {
+  background: $primary;
+  color: #fff;
+  padding: 16px 0;
+  text-align: center;
+
+  small {
+    opacity: 0.95;
+  }
+}
+
+/* ============ MODO APRESENTAÇÃO (TV/Projetor) ============ */
+/* Ligue colocando <body class="present"> */
+body.present {
+  font-size: clamp(18px, 1.4vw, 24px);
+}
+
+body.present .container {
+  width: min(1400px, 100% - (2 * clamp(24px, 3vw, 64px)));
+}
+
+body.present h1 {
+  font-size: clamp(2.5rem, 5vw, 6rem);
+}
+
+body.present h2 {
+  font-size: clamp(2rem, 3.2vw, 3.25rem);
+}
+
+body.present .btn {
+  padding: 1rem 1.5rem;
+}
+
+/* ============ AJUSTES MOBILE ============ */
+@media (max-width: 768px) {
+  .hero__content p {
+    width: 90%;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
