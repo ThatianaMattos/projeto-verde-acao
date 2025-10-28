@@ -1,18 +1,18 @@
-<div align="center">
+<p align="center">
+  <img src="img/logo-verde-acao.png" alt="Logo Verde Ação" width="180">
+</p>
 
-<img src="./img/logo-verde-acao.png" width="180px" alt="Logo Verde Ação">
+<h1 align="center">🌱 Verde Ação</h1>
 
-# 🌿 Verde Ação
+<p align="center">
+  Ser voluntário no Verde Ação é plantar esperança e colher transformação.<br>
+  Juntos, cuidamos do planeta e inspiramos mudanças reais! 💚🌍✨
+</p>
 
-**Ser voluntário na Verde Ação é plantar esperança e colher transformação.**  
-Juntos, cuidamos do planeta e inspiramos mudanças reais! 🌍✨
-git a
-<br>
-
-🔗 **Acesse o projeto online:**  
-https://thatianamattos.github.io/projeto-verde-acao/
-
-</div>
+<p align="center">
+  <strong>🔗 Acesse o projeto online:</strong><br>
+  👉 https://thatianamattos.github.io/projeto-verde-acao/
+</p>
 
 ---
 
@@ -20,38 +20,52 @@ https://thatianamattos.github.io/projeto-verde-acao/
 
 O **Verde Ação** é uma página web criada para incentivar o voluntariado, promovendo ações de cuidado ambiental, educação ecológica e preservação de áreas verdes.
 
-Este projeto foi desenvolvido no **curso Empower - Vai Na Web**, com foco em **HTML semântico, SASS, componentização e responsividade**.
+Este projeto foi desenvolvido no **curso Empower - Vai Na Web**, com foco em:
+
+- HTML semântico
+- SASS (variáveis, nesting e componentização)
+- Responsividade
+- Boas práticas de versionamento com Git & GitHub
 
 ---
 
-## 🖼️ Prévia do projeto
+## 👀 Prévia do projeto
 
-### 🏞️ Seção Inicial
-
-<img src="./img/banner-hero.png" alt="Hero Banner" width="100%">
-
-### 🌻 Cards de Atividades
-
+### 🏞 Sessão Inicial
 <p align="center">
-  <img src="./img/cards1.png" width="45%">
-  <img src="./img/cards2.png" width="45%">
+  <img src="img/banner-hero.png" alt="Banner Hero" width="90%">
 </p>
 
-### 📝 Formulário de Cadastro
+---
 
-<img src="./img/formulario.png" alt="Formulário" width="100%">
+### 🌻 Cards de Atividades
+<p align="center">
+  <img src="img/card-plantio.png" width="45%" alt="Plantio de mudas">
+  <img src="img/card-educacao.png" width="45%" alt="Educação Ambiental">
+</p>
+<p align="center">
+  <img src="img/card-cuidados.png" width="45%" alt="Cuidados ambientais">
+  <img src="img/card-mapeamento.png" width="45%" alt="Mapeamento ambiental">
+</p>
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+### 📝 Formulário de Cadastro
+<p align="center">
+  <img src="img/formulario.png" alt="Formulário de Cadastro" width="70%">
+</p>
 
-| Tecnologia       | Descrição                                        |
-| ---------------- | ------------------------------------------------ |
-| **HTML5**        | Estrutura da página e semântica                  |
-| **SASS / SCSS**  | Estilização com variáveis, nesting e organização |
-| **CSS3**         | Responsividade e aparência visual                |
-| **Git & GitHub** | Versionamento e deploy                           |
-| **GitHub Pages** | Hospedagem do projeto na web                     |
+---
+
+## 🛠 Tecnologias utilizadas
+
+| Tecnologia | Descrição |
+|----------|-----------|
+| **HTML5** | Estrutura da página e semântica |
+| **SASS / SCSS** | Estilização com variáveis, nesting e organização |
+| **CSS3** | Aparência visual e responsividade |
+| **Git & GitHub** | Versionamento e deploy |
+| **GitHub Pages** | Hospedagem do projeto |
 
 ---
 
@@ -61,9 +75,8 @@ Este projeto foi desenvolvido no **curso Empower - Vai Na Web**, com foco em **H
 # Clone o repositório
 git clone https://github.com/ThatianaMattos/projeto-verde-acao.git
 
-# Acesse o diretório
+# Acesse a pasta do projeto
 cd projeto-verde-acao
 
 # Abra o arquivo no navegador
-start index.html   # (Windows)
-```
+start index.html
