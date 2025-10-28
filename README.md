@@ -80,3 +80,29 @@ cd projeto-verde-acao
 
 # Abra o arquivo no navegador
 start index.html
+
+
+🧠 Aprendizados
+
+✔ Uso de SASS para reutilização e organização de estilos
+✔ Componentização de elementos visuais
+✔ Ajustes de responsividade
+✔ Deploy com GitHub Pages
+✔ Boas práticas de versionamento
+
+📌 Status do Projeto
+
+✅ Concluído e publicado
+💡 Aberto para melhorias e novas funcionalidades
+
+👩‍💻 Desenvolvedora
+
+Thatiana Mattos
+🌍 Desenvolvedora Web Full-Stack
+💛 Mãe, criativa, resiliente e apaixonada por tecnologia
+
+🔗 GitHub: https://github.com/ThatianaMattos
+
+🔗 LinkedIn: https://www.linkedin.com/in/thatiana-mattos/
+
+<p align="center"> Feito com carinho, café e código. ☕💚 </p> ```
