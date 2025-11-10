@@ -3,101 +3,69 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>Verde Ação</title>
-
-    <!-- Fonte (mais performático que @import no CSS) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" href="favicon-32.png">
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <title>Verde Ação</title>
 </head>
 
 <body>
-    <header class="hero">
-        <div class="hero__bg"></div>
-        <div class="hero__overlay"></div>
-        <div class="hero__content container">
+    <header>
+        <div class="box-header">
             <h1>Verde Ação</h1>
-            <p>Ser voluntário na Verde Ação é plantar esperança e colher transformação. Juntos, cuidamos do planeta e
-                inspiramos mudanças reais!</p>
-            <button class="btn btn--primary" type="button">Quero ser voluntuntario</button>
+            <p>
+                Ser voluntário na Verde Ação é plantar esperança e colher transformação.
+                Juntos, cuidamos do planeta e inspiramos mudanças reais!
+            </p>
+            <button type="submit">Quero ser voluntário</button>
         </div>
-
     </header>
+    <section class="cards">
+        <article class="card">
+            <img src="./assets/Rectangle 3.png" alt="">
+            <h2>Plantio de Mudas</h2>
+            <p>Cada muda plantada ajuda a restaurar o meio ambiente </p>
+            <button type="submit">Ver mais</button>
+        </article>
+        <article class="card">
+            <img src="./assets/download 2.png" alt="">
+            <h2>Educação Ambiental</h2>
+            <p>Promove oficinas e rodas de conversas</p>
+            <button type="submit">Ver mais</button>
+        </article>
+        <article class="card">
+            <img src="./assets/artigo-5 1.png" alt="">
+            <h2>Cuidados</h2>
+            <p>Ajude a manter areas preservadas</p>
+            <button type="submit">Ver mais</button>
+        </article>
+        <article class="card">
+            <img src="./assets/florestas 1.png" alt="">
+            <h2>Mapeamento</h2>
+            <p>Indentifique areas que precisam de mapeamento</p>
+            <button type="submit">Ver mais</button>
+        </article>
+    </section>
 
-    <main>
-        <section class="cards container" aria-labelledby="acoes">
-            <h2 id="acoes" class="visually-hidden">Ações em destaque</h2>
+    <section class="forms">
+        <h3>Cadastre-se como voluntário</h3>
+        <p>Faça parte de ações que transformam o mundo. Com pequenas atitudes, você pode gerar grandes impactos na
+            natureza e na comunidade</p>
 
-            <article class="card">
-                <img src="./img/card-plantio.png" alt="Mudas sendo plantadas">
-                <div class="card__body">
-                    <h3>Plantio de mudas</h3>
-                    <p>Cada muda plantada ajuda a restaurar o meio ambiente</p>
-                    <button class="btn btn--outline" type="button">Ver mais</button>
-                </div>
-            </article>
-
-            <article class="card">
-                <img src="./img/card-educacao.png" alt="Crianças em atividade de reciclagem">
-                <div class="card__body">
-                    <h3>Educação Ambiental</h3>
-                    <p>Promove oficinas e rodas de conversa</p>
-                    <button class="btn btn--outline" type="button">Ver mais</button>
-                </div>
-            </article>
-
-            <article class="card">
-                <img src="./img/card-cuidados.png" alt="Mãos cuidando do plantio">
-                <div class="card__body">
-                    <h3>Cuidados</h3>
-                    <p>Ajude a manter áreas preservadas</p>
-                    <button class="btn btn--outline" type="button">Ver mais</button>
-                </div>
-            </article>
-
-            <article class="card">
-                <img src="./img/card-mapeamento.png" alt="Viveiro visto de cima">
-                <div class="card__body">
-                    <h3>Mapeamento</h3>
-                    <p>Identifique áreas que precisam de mapeamento</p>
-                    <button class="btn btn--outline" type="button">Ver mais</button>
-                </div>
-            </article>
-        </section>
-
-        <section class="signup">
-            <div class="signup__panel container">
-                <h2>Cadastre-se como voluntário</h2>
-                <p>Faça parte de ações que transformam o mundo. Com pequenas atitudes, você pode gerar grandes impactos
-                    na natureza e na comunidade</p>
-
-                <form class="form" action="#" method="post" novalidate>
-                    <input type="text" placeholder="Nome" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="text" placeholder="Cidade" required>
-                    <input list="lista-atividades" placeholder="Selecione atividade" required>
-                    <datalist id="lista-atividades">
-                        <option value="Plantio de mudas"></option>
-                        <option value="Educação Ambiental"></option>
-                        <option value="Cuidados"></option>
-                        <option value="Mapeamento"></option>
-                    </datalist>
-                    <button class="btn btn--primary" type="submit">Cadastrar</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container"><small>© todos os direitos reservados</small></div>
-    </footer>
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Cidade" required>
+        <select required>
+            <option value="" disabled selected>Selecione atividade</option>
+            <option value="">Plantio de Mudas</option>
+            <option value="">Educação Ambiental</option>
+            <option value="">Cuidados</option>
+            <option value="">Mapeamento</option>
+        </select>
+        <button>Cadastrar</button>
+    </section>
+    <section class="footer">
+        <h4>© todos os direitos reservados </h4>
+    </section>
 </body>
 
 </html>

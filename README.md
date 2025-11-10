@@ -18,10 +18,10 @@ educação ecológica e preservação de áreas verdes.
 
 Este projeto foi desenvolvido durante o curso **Empower - Vai Na Web**, com foco em:
 
-- HTML semântico  
-- Estilização com **SASS/SCSS**  
-- Organização de estilos através de componentização  
-- Responsividade para diferentes tamanhos de tela  
+- HTML semântico
+- Estilização com **SASS/SCSS**
+- Organização de estilos através de componentização
+- Responsividade para diferentes tamanhos de tela
 
 ---
 
@@ -32,24 +32,24 @@ Este projeto foi desenvolvido durante o curso **Empower - Vai Na Web**, com foco
 ✔ Melhoria na escrita de HTML semântico  
 ✔ Ajustes de responsividade para mobile e desktop  
 ✔ Publicação com **GitHub Pages**  
-✔ Boas práticas de versionamento com Git  
+✔ Boas práticas de versionamento com Git
 
 ---
 
 ## 🛠 Tecnologias utilizadas
 
-| Tecnologia | Função |
-|-----------|--------|
-| **HTML5** | Estruturação da página |
-| **SASS / SCSS** | Estilização, reutilização e organização de estilos |
-| **Git & GitHub** | Versionamento e deploy |
-| **VS Code** | Ambiente de desenvolvimento |
+| Tecnologia       | Função                                             |
+| ---------------- | -------------------------------------------------- |
+| **HTML5**        | Estruturação da página                             |
+| **SASS / SCSS**  | Estilização, reutilização e organização de estilos |
+| **Git & GitHub** | Versionamento e deploy                             |
+| **VS Code**      | Ambiente de desenvolvimento                        |
 
 ---
 
 ## 📂 Como executar o projeto localmente
 
-```bash
+````bash
 # Clone o repositório
 git clone https://github.com/ThatianaMattos/projeto-verde-acao.git
 
@@ -77,3 +77,4 @@ Thatiana Mattos
 📌 LinkedIn: https://www.linkedin.com/in/thatiana-mattos/
 
 <p align="center">Feito com carinho, café e código. ☕💻💚</p> ```
+````
